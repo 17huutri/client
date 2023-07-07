@@ -12,6 +12,7 @@ import PageNotFound from "./components/PageNotFound";
 import UserRecovery from './components/UserRecovery';
 import ShowUser from "./components/ShowUser";
 import Admin from "./components/Admin";
+import Homepage from "./components/Homepage";
 // managerment
 import ShowCustomer from './components/ShowCustomer.js'
 import ShowMentor from './components/ShowMentor.js'
@@ -24,16 +25,21 @@ import Grade from './components/Grade.js'
 import Course from './components/Course.js'
 import { AuthorizeUser, ProtectRoute } from './middleware/auth'
 
+
 const router = createBrowserRouter([
     {
         path: '/',
+        element: <Homepage></Homepage>
+    },
+    {
+        path: '/login',
         element: <Login></Login>
     },
     {
         path: '/showCustomers',
         element: <ShowCustomer></ShowCustomer>
     },
-   
+
     {
         path: '/showMentors',
         element: <ShowMentor></ShowMentor>
