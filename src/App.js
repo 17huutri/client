@@ -24,6 +24,10 @@ import Blog from './components/Blog.js'
 import Grade from './components/Grade.js'
 import Course from './components/Course.js'
 import { AuthorizeUser, ProtectRoute } from './middleware/auth'
+import BlogNew from "./components/blog/BlogNew";
+import { DetailBlog } from "./components/blog/DetailBlog";
+
+import { Homeblog } from "./components/HomeBlog";
 
 
 const router = createBrowserRouter([
@@ -105,6 +109,20 @@ const router = createBrowserRouter([
         path: '/blog',
         element: <Blog></Blog>
     },
+
+    {
+        path: '/blognew',
+        element: <BlogNew></BlogNew>
+    },
+
+    {
+        path: '/detailblog/:id',
+        element: <DetailBlog></DetailBlog>
+    },
+    {
+        path: '/homeblog',
+        element: <Homeblog></Homeblog>
+    }
 ])
 export default function App() {
     return (
