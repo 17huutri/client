@@ -106,3 +106,30 @@
     color: orange;
     transition: background-color 0.3s, color 0.3s
 }
+
+.btn-user {
+    border-radius: 19px;
+    padding: 8px 16px;
+    border: 1px solid;
+    font-weight: bold;
+    border-width: 2px;
+
+    background-color: white;
+    color: orange;
+    transition: background-color 0.3s, color 0.3s
+}
+
+.block-user {
+    font-size: medium;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    color: #292424;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.block-user:hover {
+    background-color: #fecf40;
+    color: #fff;
+}

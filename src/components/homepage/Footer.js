@@ -3,10 +3,8 @@ import Logo from '../../assets/img/logo.png';
 import { FaYoutube, FaInstagram, FaGithub } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <footer className='pb-[70px]'
-      data-aos='fade-up'
+    <footer>
 
-      data-aos-offset='0'>
       <div className='container mx-auto'>
         <div className='flex flex-col justify-between items-center lg:flex-row gap-y-5'>
           <a href='#'><img src={Logo} alt='' className='w-[370px] h-[300px]'></img></a>
@@ -22,10 +20,7 @@ const Footer = () => {
               <FaGithub /></div>
           </div>
         </div>
-
       </div>
-
-
     </footer>
   );
 };

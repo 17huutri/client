@@ -26,7 +26,7 @@ export default function Register() {
     validate: confirmPasswordValidation, registerValidation,
     validateOnBlur: false,
     validateOnChange: false,
-    
+
     onSubmit: async values => {
       console.log(values.email)
       setUsername(values.username);
@@ -81,9 +81,9 @@ export default function Register() {
               <input {...formik.getFieldProps('email')} className={styles.textbox} type="text" placeholder='Email*' />
               <input {...formik.getFieldProps('username')} className={styles.textbox} type="text" placeholder='Username*' />
               <input {...formik.getFieldProps('password')} onChange={formik.handleChange}
-                                onBlur={formik.handleBlur} className={styles.textbox} type="password" placeholder='Password*' />
+                onBlur={formik.handleBlur} className={styles.textbox} type="password" placeholder='Password*' />
               <input {...formik.getFieldProps('confirm_pwd')} onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}  className={styles.textbox} type="password" placeholder='Confirm Password*' />
+                onBlur={formik.handleBlur} className={styles.textbox} type="password" placeholder='Confirm Password*' />
               <button className={styles.btn} type='submit'>Register</button>
             </div>
 

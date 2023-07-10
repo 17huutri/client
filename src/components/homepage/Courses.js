@@ -24,14 +24,14 @@ const Courses = () => {
                 data-aos='fade-up'
                 data-aos-delay={delay}>
                 <div className='-mt-[38px] lg:-mt-12 mb-4 lg:mb-6'>
-                  <img src={image} alt='' />
+                  <img src={image} alt='' className='img-course' />
                 </div>
                 <div>
                   <h4 className='text-lg lg:text-xl font-semibold mb-2 lg:mb-4'>{title}</h4>
                   <p>{desc}</p>
                 </div>
                 {/* bottom */}
-                <div className=' flex items-center justify-between mt-8 mb-2 lg:mb-0'>
+                <div className='flex items-center justify-between mt-8 mb-2 lg:mb-0'>
                   {/* stars */}
                   <div className='flex-start flex text-orange gap-x-2'>
                     <BsStarFill />
